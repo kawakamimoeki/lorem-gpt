@@ -18,10 +18,10 @@ describe("LoremGPT", () => {
 
   it("should return two words", async () => {
     const Lorem = new LoremGPT({
-      locale: "env",
+      locale: "ja",
       openaiApiKey: process.env.OPENAI_API_KEY as string,
     });
-    const result = await Lorem.gen("Animals", 2);
+    const result = await Lorem.gen("動物", 2);
 
     console.log(result);
 

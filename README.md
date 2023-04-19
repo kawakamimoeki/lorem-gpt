@@ -1,6 +1,6 @@
 # LoremGPT
 
-![LoremGPT](https://raw.githubusercontent.com/moekidev/faker-gpt/main/docs/logo.svg)
+![LoremGPT](https://raw.githubusercontent.com/moekidev/lorem-gpt/main/docs/logo.svg)
 
 A fake data generator using GPT.
 
