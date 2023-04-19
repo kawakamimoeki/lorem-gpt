@@ -1,7 +1,7 @@
 import { describe, it } from "mocha";
 import { assert } from "chai";
 
-import FakerGPT from "../src";
+import { FakerGPT } from "../src/index";
 
 describe("FakerGPT", () => {
   it("should return a word", async () => {

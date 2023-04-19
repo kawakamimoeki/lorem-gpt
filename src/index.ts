@@ -35,4 +35,4 @@ class FakerGPT {
   }
 }
 
-export default FakerGPT;
+export { FakerGPT };

@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A fake data generator using GPT",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moekidev/faker-gpt.git"
+  },
   "scripts": {
     "build": "tsc src/index.ts --outDir dist",
     "test": "mocha tests/**/*.spec.ts --require ts-node/register"
