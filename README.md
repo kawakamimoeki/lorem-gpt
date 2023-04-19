@@ -26,7 +26,9 @@ const Lorem = new LoremGPT({
   openaiApiKey: process.env.OPENAI_API_KEY as string,
 });
 
-const animals = Lorem.gen("Animals", 2);
+// ...
+
+const animals = await Lorem.gen("Animals", 2);
 
 console.log(animals);
 // [ 'Elephant', 'Giraffe' ]
