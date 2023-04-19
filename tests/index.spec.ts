@@ -6,7 +6,7 @@ import { FakerGPT } from "../src/index";
 describe("FakerGPT", () => {
   it("should return a word", async () => {
     const faker = new FakerGPT({
-      language: "env",
+      locale: "env",
       openaiApiKey: process.env.OPENAI_API_KEY as string,
     });
     const result = await faker.gen("Animals", 1);
@@ -18,7 +18,7 @@ describe("FakerGPT", () => {
 
   it("should return two words", async () => {
     const faker = new FakerGPT({
-      language: "env",
+      locale: "env",
       openaiApiKey: process.env.OPENAI_API_KEY as string,
     });
     const result = await faker.gen("Animals", 2);

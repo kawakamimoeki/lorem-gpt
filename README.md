@@ -22,7 +22,7 @@ Please set an environment variable:
 import FakerGPT from "faker-gpt";
 
 const faker = new FakerGPT({
-  language: "en",
+  locale: "en",
   openaiApiKey: process.env.OPENAI_API_KEY as string,
 });
 

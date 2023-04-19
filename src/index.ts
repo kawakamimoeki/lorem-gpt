@@ -3,16 +3,16 @@ import { prompt } from "./prompt";
 
 class FakerGPT {
   openai: OpenAIApi;
-  language: string;
+  locale: string;
 
   constructor({
-    language,
+    locale,
     openaiApiKey,
   }: {
-    language: string;
+    locale: string;
     openaiApiKey: string;
   }) {
-    this.language = language;
+    this.locale = locale;
     this.openai = new OpenAIApi(new Configuration({ apiKey: openaiApiKey }));
   }
 
@@ -22,7 +22,7 @@ class FakerGPT {
       messages: [
         {
           role: "user",
-          content: prompt(this.language, type, num),
+          content: prompt(this.locale, type, num),
         },
       ],
     });
