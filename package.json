@@ -1,0 +1,27 @@
+{
+  "name": "lorem-gpt",
+  "version": "0.1.0",
+  "description": "A fake data generator using GPT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moekidev/lorem-gpt.git"
+  },
+  "scripts": {
+    "build": "tsc src/index.ts --outDir dist",
+    "test": "mocha tests/**/*.spec.ts --require ts-node/register"
+  },
+  "author": "Moeki Kawakami",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}
